@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>    #makes sure that mod_rewrite is enabled
+    Options -Multiviews     #disabled .php
+    RewriteEngine On        #allows you to rewrite URL requests that come into your server and is based on a regular-expression parser.
+    RewriteBase /cvm-darB/public    #set root path
+    # RewriteCont => execute the next RewriteRule only if this is true
+    RewriteCond %{REQUEST_FILENAME} !-d #request is not for a directory
+    RewriteCond %{REQUEST_FILENAME} !-f #request is not for a file
+    #Querry string appended "index.php?url=olle&p=1" if the rule matches dont process any more
+    RewriteRule ^(.+)$ index.php?url=$1 [QSA,L] #has more than 1 character
+</IfModule>

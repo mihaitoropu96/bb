@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<select multiple="multiple" id="my-select" name="my-select[]">
+
+  <option value='elem_1'>elem 1</option>
+  <option value='elem_2'>elem 2</option>
+  <option value='elem_3'>elem 3</option>
+  <option value='elem_4'>elem 4</option>
+  <option value='elem_100'>elem 100</option>
+</select>{% block javascripts %}
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="public/js/main.js"></script>
+{% endblock %}
+</body>
+</html>
