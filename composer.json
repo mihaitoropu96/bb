@@ -1,0 +1,19 @@
+{
+    "name": "torop/cvm-dar-b",
+    "authors": [
+        {
+            "name": "mihaitoropu",
+            "email": "toropumihai@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.0",
+        "symfony/var-dumper": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Vendor\\Namespace\\": "vendor/"
+        }
+    }
+}
