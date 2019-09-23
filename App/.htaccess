@@ -1,0 +1,5 @@
+#tells the Apache Web Server to enable directory listing within the directory
+#containing this .htaccess file. You can also reverse this to disable directory
+#listings by replacing the plus sign before the text 'Indexes' with a minus
+#sign. e.g. 'Options -Indexes'.
+Options -Indexes
